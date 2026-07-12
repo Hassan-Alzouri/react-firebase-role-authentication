@@ -158,27 +158,6 @@ http://localhost:3000
 
 ---
 
-# 📸 Screenshots
-
-(Add screenshots here)
-
-Example:
-
-```
-screenshots/
-│
-├── <img width="1898" height="938" alt="Screenshot 2026-07-13 010125" src="https://github.com/user-attachments/assets/2520406d-57cb-4c6f-8461-54267507a8f2" />
-
-├──<img width="1900" height="940" alt="Screenshot 2026-07-13 010141" src="https://github.com/user-attachments/assets/64472046-8796-47ab-9811-61eb63ebf4ba" />
-
-├── <img width="1904" height="944" alt="Screenshot 2026-07-13 012634" src="https://github.com/user-attachments/assets/b010e98f-5940-417e-bb0f-06bd35731b46" />
-
-└── <img width="1902" height="947" alt="Screenshot 2026-07-13 012822" src="https://github.com/user-attachments/assets/04123332-b44c-4069-b00c-974dbcd705d0" />
-
-```
-
----
-
 # 📚 What I Learned
 
 Through this project, I practiced:

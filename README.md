@@ -20,8 +20,7 @@ The main goal of this project is to practice building real-world React applicati
 
 ## ✨ Features
 
-## 🔐 Authentication
-
+### 🔐 Authentication
 - User registration
 - User login/logout
 - Firebase Authentication integration
@@ -29,24 +28,21 @@ The main goal of this project is to practice building real-world React applicati
 - Authentication state tracking
 - Error handling for invalid credentials
 
-## 🛡️ Authorization & Protected Routes
-
+### 🛡️ Authorization & Protected Routes
 - Role-based dashboard access
 - Protected routes using authentication checks
 - Automatic user redirection
 - Admin and user permission separation
 
-## 💻 User Experience
-
+### 💻 User Experience
 - Responsive design
 - Clean authentication flow
 - Reusable React components
-- Organized project structure
 - Global authentication state management using Context API
 
 ---
 
-# 🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 | Technology | Purpose |
 |------------|---------|
@@ -60,23 +56,18 @@ The main goal of this project is to practice building real-world React applicati
 
 ---
 
-# 🔄 Application Flow
+## 🔄 Application Flow
 
 ```
               User Visits Website
                        |
-                       |
               Register / Login
-                       |
                        |
           Firebase Authentication
                        |
-                       |
               Check User Role
                  /          \
-                /            \
           Admin User      Regular User
-              |                |
               |                |
               ▼                ▼
       Admin Dashboard    User Dashboard
@@ -84,81 +75,64 @@ The main goal of this project is to practice building real-world React applicati
 
 ---
 
-# 📂 Project Structure
+## 📂 Project Structure
 
 ```
-src/
-│
-├── components/
-│   └── Reusable UI components
-│
-├── context/
-│   └── Authentication Context
-│
-├── pages/
-│   ├── Login
-│   ├── Register
-│   ├── Admin Dashboard
-│   └── User Dashboard
-│
-├── routes/
-│   └── Protected route configuration
-│
-├── firebase/
-│   └── Firebase configuration
-│
-└── App.js
+react-firebase-role-authentication/
+└── src/
+    ├── Components/
+    │   ├── LoginRegister/     # Login and registration forms
+    │   └── Assets/            # Images and static assets
+    ├── context/
+    │   └── AuthContext.jsx    # Global authentication state (Context API)
+    ├── firebase.js             # Firebase app initialization and config
+    ├── ProtectedRoute.jsx       # Route guard for authenticated/role-based access
+    └── App.js                  # Routing and app entry
 ```
 
 ---
 
-# ⚙️ Installation & Setup
+## ⚙️ Installation & Setup
 
-## 1. Clone the repository
-
-```bash
-git clone https://github.com/Hassan-Alzouri/login-Page.git
-```
-
-## 2. Navigate to the project folder
+### 1. Clone the repository
 
 ```bash
-cd login-Page
+git clone https://github.com/Hassan-Alzouri/react-firebase-role-authentication.git
+cd react-firebase-role-authentication
 ```
 
-## 3. Install dependencies
+### 2. Install dependencies
 
 ```bash
 npm install
 ```
 
-## 4. Configure Firebase
+### 3. Configure Firebase
 
-Create a Firebase project and add your Firebase configuration.
-
-Create a `.env` file:
+Create a Firebase project in the [Firebase Console](https://console.firebase.google.com/), enable Authentication, then create a `.env` file in the project root:
 
 ```env
 REACT_APP_FIREBASE_API_KEY=your_api_key
 REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain
 REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+REACT_APP_FIREBASE_APP_ID=your_app_id
 ```
 
-## 5. Start the application
+Update `src/firebase.js` to read these from `process.env` instead of hardcoded values.
+
+### 4. Start the application
 
 ```bash
 npm start
 ```
 
-The application will run at:
-
-```
-http://localhost:3000
-```
+The application will run at `http://localhost:3000`.
 
 ---
 
-# 📚 What I Learned
+## 📚 What I Learned
 
 Through this project, I practiced:
 
@@ -168,16 +142,15 @@ Through this project, I practiced:
 - Creating protected routes
 - Handling user roles and permissions
 - Designing responsive user interfaces
-- Structuring frontend projects professionally
 
 ---
 
-# 📌 Project Background
+## 📌 Project Background
 
 This project was developed as a technical assessment task to demonstrate frontend development skills, React architecture, authentication implementation, and problem-solving ability.
 
 ---
 
-# 📄 License
+## 📄 License
 
 This project is for educational and portfolio purposes.
